@@ -1,7 +1,5 @@
 name: Push
-
 on: [push]
-
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -23,4 +21,4 @@ jobs:
       
     - name: Build
       run: |
-        docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }} && make build-all
+        echo "test actions"
